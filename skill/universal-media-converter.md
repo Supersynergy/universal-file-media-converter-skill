@@ -64,4 +64,4 @@ conv_info                        # show detected hardware profile
 
 ## Repo
 
-https://github.com/Supersynergy/universal-media-file-converter
+https://github.com/Supersynergy/universal-file-media-converter-skill

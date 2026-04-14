@@ -1,23 +1,42 @@
 <div align="center">
 
 ```
-   █░█ █▄░█ █ █░█ █▀▀ █▀█ █▀ ▄▀█ █░░    █▀▄▀█ █▀▀ █▀▄ █ ▄▀█    ╔═════════╗
-   █▄█ █░▀█ █ ▀▄▀ ██▄ █▀▄ ▄█ █▀█ █▄▄    █░▀░█ ██▄ █▄▀ █ █▀█    ║  conv   ║
-                                                                ╚═════════╝
-                █▀▀ █ █░░ █▀▀    █▀▀ █▀█ █▄░█ █░█ █▀▀ █▀█ ▀█▀ █▀▀ █▀█
-                █▀░ █ █▄▄ ██▄    █▄▄ █▄█ █░▀█ ▀▄▀ ██▄ █▀▄ ░█░ ██▄ █▀▄
+                                                  ┌──────────┐
+                                                  │  $ conv  │
+                                                  └──────────┘
+
+      ▄████▄   ▒█████   ███▄    █  ██▒   █▓
+     ▒██▀ ▀█  ▒██▒  ██▒ ██ ▀█   █ ▓██░   █▒
+     ▒▓█    ▄ ▒██░  ██▒▓██  ▀█ ██▒ ▓██  █▒░
+     ▒▓▓▄ ▄██▒▒██   ██░▓██▒  ▐▌██▒  ▒██ █░░
+     ▒ ▓███▀ ░░ ████▓▒░▒██░   ▓██░   ▒▀█░
+     ░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒    ░ ▐░
+       ░  ▒     ░ ▒ ▒░ ░ ░░   ░ ▒░   ░ ░░
+     ░        ░ ░ ░ ▒     ░   ░ ░      ░░
+     ░ ░          ░ ░           ░       ░
+     ░                                 ░
+
+   universal media & file converter — for macOS
 ```
+
+# `conv`
 
 ### **Convert anything on your Mac. The fastest way possible.**
 
-*One command. 16 tools. Zero config. Built on 55+ real benchmarks.*
+**One command.** Sixteen tools underneath. Zero config. Built on **55+ real benchmarks**
+across video, audio, images, and documents — and a hardware profile that adapts itself
+to your chip the moment you source it.
+
+```bash
+conv anything.in anything.out      # that's the entire API
+```
 
 [![macOS](https://img.shields.io/badge/macOS-11%2B-000000?logo=apple&logoColor=white)](https://www.apple.com/macos/)
 [![Apple Silicon](https://img.shields.io/badge/Apple_Silicon-M1→M4_Ultra-555?logo=apple&logoColor=white)](#-adaptive-profiles)
 [![Intel](https://img.shields.io/badge/Intel-supported-0071c5?logo=intel&logoColor=white)](#-adaptive-profiles)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![ShellCheck](https://github.com/Supersynergy/universal-media-file-converter/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/Supersynergy/universal-media-file-converter/actions/workflows/shellcheck.yml)
-[![Smoke](https://github.com/Supersynergy/universal-media-file-converter/actions/workflows/smoke.yml/badge.svg)](https://github.com/Supersynergy/universal-media-file-converter/actions/workflows/smoke.yml)
+[![ShellCheck](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/shellcheck.yml)
+[![Smoke](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/smoke.yml/badge.svg)](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/smoke.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 </div>
@@ -47,12 +66,12 @@ That's it. `conv` figures out the right tool, the right config, and the right ha
 ## 📦 Install
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Supersynergy/universal-media-file-converter/main/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Supersynergy/universal-file-media-converter-skill/main/install.sh)"
 ```
 
 Want to read it first? **[install.sh](install.sh)** is 60 lines. We respect that.
 
-**Uninstall any time** — `curl -fsSL https://raw.githubusercontent.com/Supersynergy/universal-media-file-converter/main/uninstall.sh | bash`
+**Uninstall any time** — `curl -fsSL https://raw.githubusercontent.com/Supersynergy/universal-file-media-converter-skill/main/uninstall.sh | bash`
 
 ---
 

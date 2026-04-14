@@ -13,9 +13,9 @@ rm -rf "$INSTALL_DIR" && echo "  ✅ Removed $INSTALL_DIR"
 
 for rc in "$HOME/.zshrc" "$HOME/.bashrc"; do
   [ -f "$rc" ] || continue
-  if grep -q 'universal-media-file-converter' "$rc"; then
+  if grep -q 'universal-file-media-converter-skill' "$rc"; then
     cp "$rc" "$rc.conv-bak"
-    grep -v 'universal-media-file-converter' "$rc.conv-bak" > "$rc"
+    grep -v 'universal-file-media-converter-skill' "$rc.conv-bak" > "$rc"
     echo "  ✅ Cleaned $rc (backup: $rc.conv-bak)"
   fi
 done

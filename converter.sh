@@ -2,7 +2,7 @@
 # ════════════════════════════════════════════════════════════════
 #  conv — Universal Media & File Converter (+ Skill)
 #  One command. 16 tools. Zero config. Built on 55+ benchmarks.
-#  https://github.com/Supersynergy/universal-media-file-converter
+#  https://github.com/Supersynergy/universal-file-media-converter-skill
 #  MIT License
 # ════════════════════════════════════════════════════════════════
 

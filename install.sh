@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # ════════════════════════════════════════════════════════════════
 #  conv installer — Universal Media & File Converter (+ Skill)
-#  https://github.com/Supersynergy/universal-media-file-converter
+#  https://github.com/Supersynergy/universal-file-media-converter-skill
 # ════════════════════════════════════════════════════════════════
 set -euo pipefail
 
-REPO="Supersynergy/universal-media-file-converter"
+REPO="Supersynergy/universal-file-media-converter-skill"
 RAW="https://raw.githubusercontent.com/${REPO}/main"
 INSTALL_DIR="${CONV_INSTALL_DIR:-$HOME/.local/share/conv}"
 SKILL_DIR="${CONV_SKILL_DIR:-$HOME/.gg/skills}"
@@ -52,7 +52,7 @@ case "${SHELL:-}" in
   */bash) SHELL_RC="$HOME/.bashrc" ;;
 esac
 
-LINE="source \"$INSTALL_DIR/converter.sh\"  # universal-media-file-converter"
+LINE="source \"$INSTALL_DIR/converter.sh\"  # universal-file-media-converter-skill"
 if [ -n "$SHELL_RC" ]; then
   if [ -f "$SHELL_RC" ] && grep -Fq "$LINE" "$SHELL_RC"; then
     ok "Already wired into $SHELL_RC"
