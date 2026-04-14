@@ -1,0 +1,39 @@
+name: smoke (macOS)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  smoke:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install minimal toolset
+        run: brew install ffmpeg pandoc imagemagick webp libavif jpeg-xl
+      - name: Source and probe
+        run: |
+          # shellcheck disable=SC1091
+          source ./converter.sh
+          conv_info
+          conv --help
+          conv --version
+          conv --joke
+          conv --pet
+      - name: End-to-end conversion
+        run: |
+          # shellcheck disable=SC1091
+          source ./converter.sh
+          ffmpeg -y -f lavfi -i testsrc=duration=2:size=320x240:rate=10 -pix_fmt yuv420p test.mp4
+          conv test.mp4 test.mkv
+          test -s test.mkv
+          ffmpeg -y -f lavfi -i sine=duration=1 -ac 1 test.wav
+          conv test.wav test.mp3
+          test -s test.mp3
+          magick -size 200x200 xc:red test.png
+          conv test.png test.webp
+          test -s test.webp
+          conv test.png test.avif
+          test -s test.avif
