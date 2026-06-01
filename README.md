@@ -7,8 +7,6 @@
 > Mac-native universal file and media converter for developers who want one command, adaptive defaults, and benchmark-backed ffmpeg flags instead of hand-tuned conversion scripts.
 
 [![macOS](https://img.shields.io/badge/macOS-11%2B-000000?logo=apple&logoColor=white)](https://www.apple.com/macos/)
-[![Apple Silicon](https://img.shields.io/badge/Apple_Silicon-M1_to_M4_Ultra-555?logo=apple&logoColor=white)](#adaptive-profiles)
-[![Intel](https://img.shields.io/badge/Intel-supported-0071c5?logo=intel&logoColor=white)](#adaptive-profiles)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![ShellCheck](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/shellcheck.yml)
 [![Smoke](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/smoke.yml/badge.svg)](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/smoke.yml)
@@ -19,7 +17,7 @@ conv input.any output.any
 
 `conv` routes video, audio, image, and document conversions through the fastest available local tool for your Mac. It detects Apple Silicon vs Intel, RAM tier, VideoToolbox support, and safe parallelism, then applies defaults learned from 55+ local benchmarks.
 
-## Install
+## Quickstart
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Supersynergy/universal-file-media-converter-skill/main/install.sh)"
@@ -87,7 +85,7 @@ ffmpeg -c:v h264_videotoolbox -b:v 2000k  277% output ratio
 | `convall <src> <dst>` | Batch convert files in the current directory |
 | `optimg <files...>` | Optimize PNG/JPG files in place |
 | `optall` | Recursively optimize images in parallel |
-| `smartencode <video> [low|med|high|lossless|auto]` | Encode video with named quality targets |
+| `smartencode <video> [low/med/high/lossless/auto]` | Encode video with named quality targets |
 | `resize <image> <width>` | Resize through `vips` or `sips` depending on profile |
 
 Powered by `ffmpeg`, `vips`, `gifski`, `oxipng`, `pngquant`, `jpegoptim`, `cjxl`, `avifenc`, `cwebp`, `typst`, `pandoc`, `sox`, `sips`, `ImageMagick`, `ab-av1`, and `mediainfo`.
