@@ -8,8 +8,8 @@
 
 [![macOS](https://img.shields.io/badge/macOS-11%2B-000000?logo=apple&logoColor=white)](https://www.apple.com/macos/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![ShellCheck](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/shellcheck.yml)
-[![Smoke](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/smoke.yml/badge.svg)](https://github.com/Supersynergy/universal-file-media-converter-skill/actions/workflows/smoke.yml)
+[![ShellCheck](https://github.com/Supersynergy/conv/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/Supersynergy/conv/actions/workflows/shellcheck.yml)
+[![Smoke](https://github.com/Supersynergy/conv/actions/workflows/smoke.yml/badge.svg)](https://github.com/Supersynergy/conv/actions/workflows/smoke.yml)
 
 ```bash
 conv input.any output.any
@@ -20,7 +20,7 @@ conv input.any output.any
 ## Quickstart
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Supersynergy/universal-file-media-converter-skill/main/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Supersynergy/conv/main/install.sh)"
 source ~/.zshrc
 conv_info
 ```
@@ -30,15 +30,15 @@ Expected result: `conv_info` prints your detected profile and `conv --help` is a
 Prefer to inspect first:
 
 ```bash
-git clone https://github.com/Supersynergy/universal-file-media-converter-skill
-cd universal-file-media-converter-skill
+git clone https://github.com/Supersynergy/conv
+cd conv
 sed -n '1,140p' install.sh
 ```
 
 Uninstall:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Supersynergy/universal-file-media-converter-skill/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Supersynergy/conv/main/uninstall.sh | bash
 ```
 
 ## Try It
@@ -128,7 +128,7 @@ The installer copies the bundled skill into `~/.gg/skills/` when that directory 
 Skip skill installation:
 
 ```bash
-CONV_SKILL_DIR=/dev/null /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Supersynergy/universal-file-media-converter-skill/main/install.sh)"
+CONV_SKILL_DIR=/dev/null /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Supersynergy/conv/main/install.sh)"
 ```
 
 Agent instructions for this repository live in [AGENTS.md](AGENTS.md).
